@@ -64,6 +64,10 @@ const zooAnimals = [
   */
 
   function animalNames(array){
+    const displayNames = array.forEach(function(item){
+      return item.animal_name, item.scientific_name;
+    })
+    return displayNames;
   }
   
 
@@ -77,8 +81,7 @@ const zooAnimals = [
   💡 NOTE: Do some research for other methods that can help help you
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
   }
   
   
