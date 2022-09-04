@@ -94,7 +94,7 @@ const zooAnimals = [
   */
 
   function lowPopulationAnimals(array){
-    /*Your Code Here*/
+    return array.filter(animal => animal.population < 5);
   }
   
 
