@@ -81,8 +81,7 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(array){
-    array.map(animal => array.toLowerCase(animal_name));
-    return animalsLowerCase;
+    return array.map(animal => animal.animal_name.toLowerCase());    
   }
   
   
@@ -94,7 +93,7 @@ const zooAnimals = [
   3. Return this new array
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
+  function lowPopulationAnimals(array){
     /*Your Code Here*/
   }
   
