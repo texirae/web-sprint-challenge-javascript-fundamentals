@@ -63,8 +63,7 @@ const zooAnimals = [
   💡 NOTE: the array returned should be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(){
-
+  function animalNames(array){
   }
   
 
@@ -225,15 +224,25 @@ console.log(cuboid.surfaceArea()); // 130
 //Using CuboidMakerTwo, take your prototypes from above and refactor into class syntax. Then, create an object called cuboidTwo that uses the new keyword to use our CuboidMakerTwo class.
  
 class CuboidMakerTwo{
-
+  constructor({length, width, height}){
+    this.length = length;
+    this.width = width;
+    this.height = height;
+  }
+  volume(length, width, height){
+    return this.length * this.width * this.height;
+  }
+  surfaceArea(length, width, height){
+    return 2 * ((this.length * this.width) + (this.length * this.height) + (this.width * this.height));
+  }
 }
-
+const cuboidTwo = new CuboidMakerTwo(4, 5, 5);
 
 
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
-// console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+console.log(cuboidTwo.volume()); // 100
+console.log(cuboidTwo.surfaceArea()); // 130
 
 
 
